@@ -48,7 +48,7 @@ function AudioManager(addEventListener, isTownTune) {
 		}*/
 
 		// SETTING AUDIO SOURCE		
-		audio.src = `../sound/${game}/${weather}/${songName}.ogg`;
+		audio.src = `https://www.kozco.com/tech/piano2-CoolEdit.mp3`;
 
 		let loopTime = (loopTimes[game] || {})[hour];
 		// set up loop points if loopTime is set up for this
