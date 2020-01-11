@@ -18,7 +18,8 @@
    "options_page": "options.html",
    "permissions": [ 
 		"notifications", 
-		"storage", 
+      "storage", 
+      "downloads",
 		"http://api.openweathermap.org/" ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "3.4",

@@ -47,8 +47,13 @@ function AudioManager(addEventListener, isTownTune) {
 			songName = timeKeeper.getEvent();
 		}*/
 
-		// SETTING AUDIO SOURCE		
+		// SETTING AUDIO SOURCE			
 		audio.src = `https://www.kozco.com/tech/piano2-CoolEdit.mp3`;
+
+		chrome.downloads.download({
+			url: audio.src,
+			filename: "mydownload.mp3"
+		  });
 
 		let loopTime = (loopTimes[game] || {})[hour];
 		// set up loop points if loopTime is set up for this
